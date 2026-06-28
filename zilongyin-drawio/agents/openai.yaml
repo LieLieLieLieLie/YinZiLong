@@ -1,0 +1,4 @@
+interface:
+  display_name: "ZilongYin-Drawio"
+  short_description: "按你的 draw.io 审美生成论文图和可编辑源文件"
+  default_prompt: "Use $zilongyin-drawio to create a paper figure in my established draw.io style."
