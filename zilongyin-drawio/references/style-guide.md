@@ -10,13 +10,13 @@ Use the complete recent corpus, not a sample:
 - Parsed content: 150 pages, about 71k cells, 54k vertices, and 16.5k edges.
 - Canvas: 149 of 150 pages use A4 portrait `826 x 1169` with `background="none"`.
 
-Older files are useful only as backup. The recent corpus is more polished, denser, whiter, more paper-ready, and more mixed-media than the earlier overall corpus.
+Do not use files, statistics, contact sheets, or impressions from before 2025-12-01. This guide intentionally excludes that material.
 
 ## Recent Overall Look
 
 - Academic paper figure, not a poster or product infographic.
 - Very high information density with compact but aligned subfigures.
-- More white background and gray/black technical structure than early files.
+- White background with gray/black technical structure as the dominant base.
 - Pastel color is used for semantic grouping, not decoration.
 - Frequent multi-panel summaries: method overview, module detail, experimental comparison, screenshots, tables, legends, and flow steps in one figure.
 - Embedded raster images are common when the domain needs evidence: medical slices, remote-sensing images, navigation screenshots, soil/scene photos, charts, masks, heatmaps, or UI-like examples.

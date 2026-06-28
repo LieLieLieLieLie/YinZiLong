@@ -1,6 +1,6 @@
 ---
 name: zilongyin-drawio
-description: Recreate Zilong Yin's recent academic draw.io figure style and generate either GPT Image2-ready prompts or editable diagrams.net/draw.io source files. Use when the user asks to make, imitate, redesign, beautify, export, or generate paper figures, model architecture diagrams, workflow diagrams, method overview figures, ablation/experiment schematics, or draw.io files in the user's established style. Prioritize the complete 2025-12-01 through 2026-06-28 corpus over older examples.
+description: Recreate Zilong Yin's academic draw.io figure style using only the 2025-12-01 through 2026-06-28 corpus, and generate either GPT Image2-ready prompts or editable diagrams.net/draw.io source files. Use when the user asks to make, imitate, redesign, beautify, export, or generate paper figures, model architecture diagrams, workflow diagrams, method overview figures, ablation/experiment schematics, or draw.io files in the user's established style. Do not use any pre-2025-12-01 examples or statistics.
 ---
 
 # ZilongYin-Drawio
@@ -9,11 +9,11 @@ description: Recreate Zilong Yin's recent academic draw.io figure style and gene
 
 Use this skill to make academic figures that match the user's recent draw.io work: dense paper-ready diagrams, thin technical strokes, many small modules, mixed Chinese/English labels, embedded experiment images where useful, pastel grouping panels, and editable diagrams.net source files.
 
-The primary training reference is the complete recent corpus from 2025-12-01 through 2026-06-28: 150 first-level `.drawio` files and 143 exported PNG files. Older files are secondary references only.
+The training reference is only the corpus from 2025-12-01 through 2026-06-28: 150 first-level `.drawio` files and 143 exported PNG files.
 
 ## Priority Rule
 
-Always follow the recent corpus first. Do not dilute the style with older, more decorative, or less paper-finished examples unless the user explicitly asks for an older look.
+Use only the 2025-12-01 through 2026-06-28 corpus. Do not reference, infer from, or blend in any examples, statistics, contact sheets, or impressions from before 2025-12-01.
 
 Use these bundled references:
 
@@ -21,7 +21,7 @@ Use these bundled references:
 - `references/recent_root_drawio_manifest.json`
 - `references/recent_delivery_png_manifest.json`
 
-If local visual contact sheets exist in `assets/`, use them only as optional visual backup. The portable GitHub version keeps the repository light and relies on the recent style guide plus statistics.
+Do not use any non-recent contact sheet or global/all-time statistics file.
 
 ## Workflow
 
@@ -76,4 +76,4 @@ The script creates uncompressed XML, so another agent can patch it later. Use it
 
 - Read `references/style-guide.md` for the detailed recent-corpus style guide.
 - Read `references/recent_drawio_style_stats_2025-12-01_to_2026-06-28.json` when exact frequencies matter.
-- If local contact sheets are available, compare visually before finalizing prompts or diagrams; otherwise use the recent style guide and statistics.
+- If local recent contact sheets are available, compare visually before finalizing prompts or diagrams; otherwise use the recent style guide and statistics.
